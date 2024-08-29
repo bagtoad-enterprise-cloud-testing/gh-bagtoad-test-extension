@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: cli/gh-extension-precompile@v1
+      - uses: BagToad/gh-extension-precompile@trunk
         with:
           generate_attestations: true
           go_version_file: go.mod
