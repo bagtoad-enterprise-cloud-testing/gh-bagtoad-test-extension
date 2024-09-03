@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: BagToad/gh-extension-precompile@trunk
+      - uses: cli/gh-extension-precompile@bagtoad/50-error-androidamd64-requires-external-cgo-linking-but-cgo-is-not-enabled
         with:
           generate_attestations: true
           go_version_file: go.mod
