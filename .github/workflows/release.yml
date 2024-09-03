@@ -15,5 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: cli/gh-extension-precompile@bagtoad/50-error-androidamd64-requires-external-cgo-linking-but-cgo-is-not-enabled
         with:
+          release_android: true
+          android_sdk_version: 30
           generate_attestations: true
           go_version_file: go.mod
